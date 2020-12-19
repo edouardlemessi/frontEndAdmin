@@ -1,0 +1,23 @@
+ <div class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+	<div class="page-wrapper">
+		<app-header></app-header>
+		<!-- end header -->
+    <app-color></app-color>
+		<!-- end color quick setting -->
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+		   <app-navabar></app-navabar>
+			<!-- end sidebar menu -->
+      <!-- start page content -->
+      <router-outlet></router-outlet>
+			<!-- end page content -->
+      <!-- start chat sidebar -->
+     <app-sidebar></app-sidebar>
+      <!-- end chat sidebar -->
+      </div>
+		<!-- end page container -->
+		<!-- start footer -->
+     <app-footer></app-footer>
+		<!-- end footer -->
+	</div>

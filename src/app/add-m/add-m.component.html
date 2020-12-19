@@ -1,0 +1,121 @@
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <div class="page-bar">
+            <div class="page-title-breadcrumb">
+                <div class=" pull-left">
+                    <div class="page-title">Add M</div>
+                </div>
+                <ol class="breadcrumb page-breadcrumb pull-right">
+                    <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+                            href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+                    </li>
+                    <li><a class="parent-item" href="#">M</a>&nbsp;<i class="fa fa-angle-right"></i>
+                    </li>
+                    <li class="active">Add M</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="card card-box">
+                    <div class="card-head">
+                        <header>Basic Information</header>
+                        <button id="panel-button"
+                            class="mdl-button mdl-js-button mdl-button--icon pull-right"
+                            data-upgraded=",MaterialButton">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                            data-mdl-for="panel-button">
+                            <li class="mdl-menu__item"><i class="material-icons">assistant_photo</i>Action
+                            </li>
+                            <li class="mdl-menu__item"><i class="material-icons">print</i>Another action
+                            </li>
+                            <li class="mdl-menu__item"><i class="material-icons">favorite</i>Something else
+                                here
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body" id="bar-parent">
+                
+                        <form [formGroup]="Mat" (ngSubmit)="onSubmitForm()" class="form-horizontal">
+                            <div class="form-body">
+                              
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3">urlImage
+                                        <span class="required"> * </span>
+                                    </label>
+                                    <div class="col-md-5">
+                                        <input type="text"  formControlName="urlImage" id="urlImage" data-required="1"
+                                            class="form-control input-height" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3">Designation
+                                    </label>
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                            </span>
+                                            <input type="text" class="form-control input-height"
+                                            formControlName="desi" id="desi"> </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3">disponibilite
+                                        <span class="required"> * </span>
+                                    </label>
+                                    <div class="col-md-5">
+                                        <input type="text"  formControlName="disponibilite" id="disponibilite" data-required="1"
+                                            class="form-control input-height" />
+                                    </div>
+                                </div>
+                                
+                               
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3">Date d'achat
+                                        <span class="required"> * </span>
+                                    </label>
+                                    <div class="col-md-5">
+                                        <input formControlName="date_achat" id="date_achat" type="text" placeholder=""
+                                            class="form-control input-height"  /> </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3">Etat
+                                        <span class="required"> * </span>
+                                    </label>
+                                    <div class="col-md-5">
+                                        <input formControlName="etat" id="etat" type="text" 
+                                            class="form-control input-height" /> </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3">Categorie
+                                        <span class="required"> * </span>
+                                    </label>
+                                    <div class="col-md-5">
+                                        <select class="form-control input-height" formControlName="cat" id="cat">
+                                            <option value="">Select...</option>
+                                            <option value="client">Chaise</option>
+                                            <option value="employe">Table</option>
+                                        </select>
+                                    </div>
+                                </div>
+                             
+                                <div class="form-actions">
+                                    <div class="row">
+                                        <div class="offset-md-3 col-md-9">
+                                            <button type="submit"
+                                                class="btn btn-info m-r-20">Submit</button>
+                                            <button type="button" class="btn btn-default">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
